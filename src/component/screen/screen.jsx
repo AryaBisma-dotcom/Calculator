@@ -3,9 +3,7 @@ import './screen.css'
 
 function screen({displayValue}) {
   return (
-    <div className='Screen'>
-      {displayValue}
-    </div>
+    <div className='Screen'> {displayValue} </div>
   )
 }
 
