@@ -14,7 +14,7 @@ function App() {
         setDisplayValue('0');
     } else if (value === '=') {
         try {
-            const result = (eval(displayValue).toString());
+            const result = (new Function('return ' + displayValue)().toString());
             setDisplayValue(result);
             setClickedEqual(true);
         } catch (error) {
